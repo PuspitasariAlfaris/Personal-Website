@@ -1,33 +1,75 @@
 export default function Contact() {
-	return (
-		<section id="contact" className="space-y-6">
-			<h3 className="text-sm uppercase tracking-wider font-medium text-zinc-500 dark:text-zinc-300">Contact</h3>
-			<p className="text-zinc-800 dark:text-zinc-200">
-				Feel free to reach out if you want to collaborate on a project, need help with football development, or just
-				want to connect.
-			</p>
-			<div className="flex gap-x-6 mt-6 flex-col md:flex-row gap-y-2">
-				<span className="text-zinc-500 dark:text-zinc-300">amorim@gmail.com</span>
-				<a href="https://www.youtube.com/manutd" className="text-zinc-500 dark:text-zinc-300 flex items-center gap-x-2.5">
-					<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M1.87488 13.25C1.35095 10.7774 1.35095 8.22255 1.87488 5.75C1.94372 5.49891 2.07674 5.27006 2.26084 5.08595C2.44494 4.90185 2.67379 4.76884 2.92488 4.7C6.94747 4.03359 11.0523 4.03359 15.0749 4.7C15.326 4.76884 15.5548 4.90185 15.7389 5.08595C15.923 5.27006 16.056 5.49891 16.1249 5.75C16.6488 8.22255 16.6488 10.7774 16.1249 13.25C16.056 13.5011 15.923 13.7299 15.7389 13.914C15.5548 14.0981 15.326 14.2312 15.0749 14.3C11.0523 14.9665 6.94746 14.9665 2.92488 14.3C2.67379 14.2312 2.44494 14.0981 2.26084 13.914C2.07674 13.7299 1.94372 13.5011 1.87488 13.25Z"
-							stroke="currentColor"
-							strokeWidth="1.125"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-						/>
-						<path
-							d="M7.49988 11.75L11.2499 9.5L7.49988 7.25V11.75Z"
-							stroke="currentColor"
-							strokeWidth="1.125"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-						/>
-					</svg>
-					YouTube
-				</a>
-			</div>
-		</section>
-	);
+  return (
+    <section
+      id="contact"
+      className="space-y-10 py-16 bg-gradient-to-b from-pink-50 to-white dark:from-zinc-900 dark:to-zinc-800 rounded-3xl shadow-inner"
+    >
+      {/* === TITLE === */}
+      <div className="text-center">
+        <h3 className="text-sm uppercase tracking-wider font-semibold text-pink-600 dark:text-pink-400">
+          Contact
+        </h3>
+        <p className="text-zinc-800 dark:text-zinc-200 max-w-2xl mx-auto mt-4 text-base leading-relaxed">
+          Saya selalu terbuka untuk kolaborasi dan peluang baru di bidang pengembangan web.
+          Jika kamu ingin berdiskusi tentang proyek, berbagi ide kreatif, atau sekadar menyapa,
+          silakan hubungi saya melalui salah satu kontak di bawah ini 💬
+        </p>
+      </div>
+
+      {/* === CARD WRAPPER === */}
+      <div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+        {/* === EMAIL CARD === */}
+        <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-white dark:bg-zinc-800 shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 border border-pink-100 dark:border-pink-800 min-h-[220px]">
+          <h4 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100 mb-2">
+            📧 Email
+          </h4>
+          <p className="text-zinc-500 dark:text-zinc-300 mb-3">
+            Kirim pesan langsung ke email saya:
+          </p>
+          <a
+            href="mailto:puspitasarialfaris0@gmail.com"
+            className="font-medium text-pink-600 hover:text-pink-700 hover:underline break-all"
+          >
+            puspitasarialfaris0@gmail.com
+          </a>
+        </div>
+
+        {/* === INSTAGRAM CARD === */}
+        <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-white dark:bg-zinc-800 shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 border border-pink-100 dark:border-pink-800 min-h-[220px]">
+          <h4 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100 mb-2">
+            📸 Instagram
+          </h4>
+          <p className="text-zinc-500 dark:text-zinc-300 mb-3">
+            Lihat keseharian dan aktivitas saya:
+          </p>
+          <a
+            href="https://www.instagram.com/psptsri.alfrs/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-pink-600 hover:text-pink-700 hover:underline"
+          >
+            @psptsri.alfrs
+          </a>
+        </div>
+
+        {/* === YOUTUBE CARD === */}
+        <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-white dark:bg-zinc-800 shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 border border-pink-100 dark:border-pink-800 min-h-[220px]">
+          <h4 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100 mb-2">
+            🎥 YouTube
+          </h4>
+          <p className="text-zinc-500 dark:text-zinc-300 mb-3">
+            Tonton konten saya di YouTube:
+          </p>
+          <a
+            href="https://www.youtube.com/@puspitasarialfaris1880"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-pink-600 hover:text-pink-700 hover:underline"
+          >
+            @puspitasarialfaris1880
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 }
